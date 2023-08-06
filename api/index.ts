@@ -18,11 +18,8 @@ const router = express.Router();
 
 router.post('/user/getRestaurant',getRestaurant);
 router.post('/user/getCusine',getCusines);
-router.post('/create/Cusine',
-upload.array('media',10),createCusine);
-router.post('/create/Restaurant',
-upload.array('media',10),
-createRestaurant);
+router.post('/create/Cusine',upload.array('media',10),createCusine);
+router.post('/create/Restaurant',upload.array('media',10),createRestaurant);
 router.post('/delete/Restaurant',deleteRestaurant);
 router.post('/delete/Cusine',deleteCusine);
 

@@ -1,6 +1,5 @@
 import { Request, Response } from "express";
 import { AdminServices } from "../services/admin.services";
-import mongoose from "mongoose";
 
 const admin = new AdminServices;
 

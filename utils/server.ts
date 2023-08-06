@@ -2,7 +2,6 @@ import express from 'express'
 import http from 'http'
 import { createRoutes } from './routes';
 import router from '../api';
-import { connectToDatabase } from './db.connection';
 import * as bodyParser from 'body-parser';
 export class ExpressServer {
     readonly port : number;
