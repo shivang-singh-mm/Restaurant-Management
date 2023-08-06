@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 export const connectToDatabase = async ()=>{
     mongoose.set('strictQuery', false);
     try{
-        await mongoose.connect("mongodb+srv://shivang___singh___:meandmine@cluster0.kvhnbem.mongodb.net/?retryWrites=true&w=majority",{
+        await mongoose.connect(process.env.DB_URL,{
             useUnifiedTopology: true,
             useNewUrlParser: true
         }as ConnectOptions);
